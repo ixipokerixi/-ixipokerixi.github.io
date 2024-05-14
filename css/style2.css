@@ -1,0 +1,45 @@
+#check2{
+    border: solid;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+#check2:hover{
+    background-color: gray;
+}
+#check2 input{
+    display: none;
+}
+
+#c2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    scale: 0;
+    rotate: 180deg;
+    /* translate: -100% -100%; */
+    transition-duration:0.5s ;
+}
+#c2::after{
+    content: "";
+    width: 45%;
+    height: 45%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10%;
+}
+#check2 input:checked~div{
+    /* translate: 0px 0px; */
+    rotate:0deg;
+
+    scale: 1;
+}

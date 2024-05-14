@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 100px;
+}
+label{
+
+    width: 100px;
+    height: 100px;
+    display:flex;
+    border-radius: 50%;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+label input{
+    display: none;
+}
+img{
+    width: 120px;
+    translate:-100% 0px;
+    transition-duration: 1s;
+    rotate: 180deg;
+} 
+label input:checked~img{
+    translate:0px 0px;
+    rotate: 0deg;
+
+}
